@@ -1,24 +1,33 @@
-
-
-public class CompteBancaire{
-
-    private String titulaire;
+public class CompteBancaire {
+    // Attributs privés
     private double solde;
-    
-    public CompteBancaire(String titulaire, double solde) {
+    private String titulaire;
+
+    // Constructeur
+    public CompteBancaire(String titulaire, double soldeInitial) {
         this.titulaire = titulaire;
-        this.solde = solde;
+        this.solde = soldeInitial;
     }
-    public void deposer(int montant){
-        this.solde = this.solde + montant;
-        System.out.println(montant + "a ete depose sur le compte");
-    }
-    public void retirer(int montant){
-        if (montant <= this.solde){
-            this.solde = this.solde - montant;
-            System.out.println(montant + "a ete retire du compte");
+
+    // Méthode pour déposer de l'argent
+    public void deposer(double montant) {
+        if (montant > 0) {
+            solde += montant;
+            System.out.println(montant + " € déposés. Nouveau solde : " + solde + " €");
+        } else {
+            System.out.println("Le montant à déposer doit être positif.");
         }
     }
 
-
+    // Méthode pour retirer de l'argent
+    public void retirer(double montant) {
+        if (montant > 0 && montant <= solde) {
+            solde -= montant;
+            System.out.println(montant + " € retirés. Nouveau solde : " + solde + " €");
+        } else if (montant > solde) {
+            System.out.println("Fonds insuffisants. Solde actuel : " + solde + " €");
+        } else {
+            System.out.println("Le montant à retirer doit être positif.");
+        }
+    }
 }

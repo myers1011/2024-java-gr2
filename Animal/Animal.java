@@ -1,7 +1,5 @@
 public class Animal {
-    protected String name; // Fixed "string" to "String"
-
-    public void fairedebruit() {
-        System.out.println("Fais du bruit");
+    public void faireDuBruit() {
+        System.out.println("L'animal fait un bruit.");
     }
 }
