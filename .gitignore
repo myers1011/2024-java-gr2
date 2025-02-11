@@ -1,1 +1,20 @@
-*.class
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed: 
+#       modified:   Animal/Animal.java
+#       modified:   Bancaire/CompteBancaire.java 
+#       modified:   Bancaire/Main.java
+#       deleted:    Helloworld.java
+#       modified:   Person/Main.java
+#       modified:   Person/Person.java
+#       deleted:    ask.java
+#
+
+
+
+
+
