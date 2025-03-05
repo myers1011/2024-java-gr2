@@ -1,0 +1,5 @@
+com\monprojet\App.class
+com\monprojet\services\UserService.class
+com\monprojet\database\DatabaseManager.class
+com\monprojet\views\UserInterface.class
+com\monprojet\models\User.class
